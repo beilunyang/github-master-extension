@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "GitHub 大师",
+    "description": "扩展名称"
+  },
+  "appDesc": {
+    "message": "GitHub 增强插件，帮助你快速掌握仓库中的代码，自动添加 DeepWiki 和 GitDiagram 按钮",
+    "description": "扩展描述"
+  }
+} 

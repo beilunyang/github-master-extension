@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "GitHub Master",
+    "description": "The name of the extension"
+  },
+  "appDesc": {
+    "message": "Enhance GitHub repositories by adding DeepWiki and GitDiagram buttons for better code understanding",
+    "description": "The description of the extension"
+  }
+} 

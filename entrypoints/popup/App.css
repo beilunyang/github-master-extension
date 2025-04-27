@@ -218,3 +218,18 @@ select.language-select option {
   background-color: var(--background-light);
   color: var(--text-primary);
 }
+
+.author-info {
+  font-size: 11px;
+  margin-top: 8px;
+  color: var(--text-secondary);
+}
+
+.author-info a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.author-info a:hover {
+  text-decoration: underline;
+}

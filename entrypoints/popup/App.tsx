@@ -146,6 +146,12 @@ function App() {
 
       <div className="footer">
         <p>{t('settings.autoSave')}</p>
+        <p className="author-info">
+          <span>{t('author.createdBy')} </span>
+          <a href="https://github.com/beilunyang" target="_blank" rel="noopener noreferrer">
+            BeilunYang
+          </a>
+        </p>
       </div>
     </div>
   );

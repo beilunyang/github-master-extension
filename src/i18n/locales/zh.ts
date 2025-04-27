@@ -13,5 +13,8 @@ export default {
     language: '语言',
     autoSave: '设置自动保存 • 刷新页面生效'
   },
-  loading: '加载中...'
+  loading: '加载中...',
+  author: {
+    createdBy: '作者：'
+  }
 }; 

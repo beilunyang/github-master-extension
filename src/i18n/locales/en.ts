@@ -13,5 +13,8 @@ export default {
     language: 'Language',
     autoSave: 'Settings auto-save • Refresh to apply'
   },
-  loading: 'Loading...'
+  loading: 'Loading...',
+  author: {
+    createdBy: 'Created by'
+  }
 }; 
