@@ -1,17 +1,20 @@
 import en from './locales/en';
-import zh from './locales/zh';
+import zh_CN from './locales/zh_CN';
+import zh_TW from './locales/zh_TW';
 
-export const supportedLocales = ['en', 'zh'] as const;
+export const supportedLocales = ['en', 'zh_CN', 'zh_TW'] as const;
 export type Locale = typeof supportedLocales[number];
 
 const messages = {
   en,
-  zh
+  zh_CN,
+  zh_TW
 };
 
 export const localeNames: Record<Locale, string> = {
   en: 'English',
-  zh: '中文'
+  zh_CN: '简体中文',
+  zh_TW: '繁體中文'
 };
 
 let currentLocale: Locale = 'en';
@@ -21,10 +24,21 @@ export async function initI18n(): Promise<void> {
     const result = await browser.storage.sync.get('locale');
     if (result.locale && supportedLocales.includes(result.locale)) {
       currentLocale = result.locale as Locale;
+    } else if (result.locale === 'zh') {
+      currentLocale = navigator.language.includes('TW') || 
+                      navigator.language.includes('HK') || 
+                      navigator.language.includes('MO') ? 'zh_TW' : 'zh_CN';
     } else {
-      const browserLocale = navigator.language.split('-')[0];
-      if (supportedLocales.includes(browserLocale as Locale)) {
-        currentLocale = browserLocale as Locale;
+      const browserLanguage = navigator.language;
+      const languageWithRegion = browserLanguage.replace('-', '_');
+      if (supportedLocales.includes(languageWithRegion as Locale)) {
+        currentLocale = languageWithRegion as Locale;
+      } else {
+        if (browserLanguage.startsWith('zh')) {
+          currentLocale = browserLanguage.includes('TW') || 
+                          browserLanguage.includes('HK') || 
+                          browserLanguage.includes('MO') ? 'zh_TW' : 'zh_CN';
+        }
       }
     }
   } catch (error) {

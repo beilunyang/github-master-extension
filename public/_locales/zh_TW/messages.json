@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "GitHub 大師",
+    "description": "擴展名稱"
+  },
+  "appDesc": {
+    "message": "GitHub 增強插件，幫助你快速掌握倉庫中的代碼，自動添加 DeepWiki 和 GitDiagram 按鈕",
+    "description": "擴展描述"
+  }
+} 
