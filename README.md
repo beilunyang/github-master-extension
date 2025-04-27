@@ -1,11 +1,13 @@
 # GitHub Master
 
-一个浏览器扩展，在GitHub仓库页面添加DeepWiki和GitDiagram按钮。
+一个浏览器扩展，帮助你快速掌握GitHub仓库中的代码，自动添加DeepWiki和GitDiagram按钮。
 
 ## 功能
 
-- 在GitHub仓库页面导航栏添加DeepWiki按钮，点击后可直接打开对应的DeepWiki页面
-- 在GitHub仓库页面导航栏添加GitDiagram按钮，点击后可直接打开对应的GitDiagram页面
+- 在GitHub仓库页面导航栏添加DeepWiki按钮，点击后可直接打开对应的DeepWiki页面，帮助你更好理解代码结构
+- 在GitHub仓库页面导航栏添加GitDiagram按钮，点击后可直接打开对应的GitDiagram页面，可视化展示代码的关系图
+- 支持多语言切换，目前支持中文和英文
+- 可自定义显示/隐藏任一按钮
 
 ## 安装方法
 

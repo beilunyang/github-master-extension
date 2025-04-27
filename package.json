@@ -1,6 +1,6 @@
 {
   "name": "github-master",
-  "description": "在GitHub仓库页面添加DeepWiki和GitDiagram按钮",
+  "description": "GitHub 增强插件，帮助你快速掌握仓库中的代码，自动添加 DeepWiki 和 GitDiagram 按钮",
   "private": true,
   "version": "0.0.0",
   "type": "module",
