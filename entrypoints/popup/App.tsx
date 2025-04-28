@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import { getCurrentLocale, initI18n, Locale, localeNames, setLocale, supportedLocales, t } from '../../src/i18n';
+import { getCurrentLocale, initI18n, Locale, localeNames, setLocale, supportedLocales, t } from '../../i18n';
 
 function App() {
   const [showDeepWiki, setShowDeepWiki] = useState(true);

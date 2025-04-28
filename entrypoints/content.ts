@@ -1,4 +1,4 @@
-import { initI18n, t } from '../src/i18n';
+import { initI18n, t } from '../i18n';
 
 export default defineContentScript({
   matches: ['*://github.com/*/*'],
