@@ -5,7 +5,7 @@
 *其他语言版本: [English](README.md)*
 
 ## 预览图
-![preview](https://pic.otaku.ren/20250428/AgADqxYAAjhcgFQ.png)
+![preview](/screenshots/zh.png)
 
 ## 功能
 

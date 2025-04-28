@@ -5,7 +5,7 @@ A browser extension that helps you quickly understand GitHub repository code by 
 *Read this in other languages: [简体中文](README_zh-CN.md)*
 
 ## Preview
-![preview](https://pic.otaku.ren/20250428/AgADrxYAAjhcgFQ.png)
+![preview](/screenshots/en.png)
 
 ## Features
 
