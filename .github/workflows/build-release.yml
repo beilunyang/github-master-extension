@@ -1,0 +1,58 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10
+          run_install: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      - name: Get version from tag
+        id: get_version
+        run: echo "version=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+        
+      - name: Install dependencies
+        run: pnpm install
+        
+      - name: Build Chrome extension
+        run: pnpm build
+        
+      - name: Create Chrome zip package
+        run: pnpm zip
+          
+      - name: Build Firefox extension
+        run: pnpm build:firefox
+        
+      - name: Create Firefox zip package
+        run: pnpm zip:firefox
+        
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            .output/github-master-${{ steps.get_version.outputs.version }}-chrome.zip
+            .output/github-master-${{ steps.get_version.outputs.version }}-firefox.zip
+          name: Release ${{ steps.get_version.outputs.version }}
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
