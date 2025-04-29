@@ -17,7 +17,10 @@ A browser extension that helps you quickly understand GitHub repository code by 
 
 ## Installation
 
-### Method 1: Download from GitHub Releases (Recommended)
+### Method 1: Download and Install from Chrome Web Store (Recommended)
+https://chromewebstore.google.com/detail/github-master/bjegnkiolegjiajilakclakjedngnflj?hl=en
+
+### Method 2: Download from GitHub Releases
 
 1. Go to the [Releases](https://github.com/beilunyang/github-master-extension/releases) page
 2. Download the latest version for your browser:
@@ -27,7 +30,7 @@ A browser extension that helps you quickly understand GitHub repository code by 
    - **Chrome**: Open `chrome://extensions/`, enable Developer mode, drag and drop the zip file to the page
    - **Firefox**: Open `about:addons`, click the gear icon, choose "Install Add-on From File", and select the downloaded zip file
 
-### Method 2: Build from Source
+### Method 3: Build from Source
 
 1. Clone this repository
 2. Install dependencies: `pnpm install`

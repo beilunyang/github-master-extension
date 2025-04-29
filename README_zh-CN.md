@@ -17,7 +17,10 @@
 
 ## 安装方法
 
-### 方法一：从 GitHub Releases 下载（推荐）
+### 方法一: 从 Chrome 应用商店下载安装（推荐）
+https://chromewebstore.google.com/detail/github-%E5%A4%A7%E5%B8%88/bjegnkiolegjiajilakclakjedngnflj?hl=zh-CN
+
+### 方法二：从 GitHub Releases 下载
 
 1. 前往[发布页面](https://github.com/beilunyang/github-master-extension/releases)
 2. 下载适合你浏览器的最新版本：
@@ -27,7 +30,7 @@
    - **Chrome**：打开 `chrome://extensions/`，启用开发者模式，将下载的 zip 文件拖放到页面上
    - **Firefox**：打开 `about:addons`，点击齿轮图标，选择"从文件安装附加组件"，选择下载的 zip 文件
 
-### 方法二：从源码构建
+### 方法三：从源码构建
 
 1. 克隆此仓库
 2. 安装依赖: `pnpm install`
